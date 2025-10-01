@@ -1,9 +1,7 @@
 class BankAccount:
     """
-    A simple Bank Account class demonstrating OOP with deposit, 
-    withdrawal, and balance display methods.
+    A simple Bank Account class to demonstrate OOP concepts.
     """
-
     def __init__(self, initial_balance=0.0):
         """
         Initializes the bank account with a starting balance.
@@ -17,8 +15,7 @@ class BankAccount:
 
     def withdraw(self, amount):
         """
-        Deducts the amount if funds are sufficient.
-        Returns True on success, False otherwise.
+        Must accept 'amount' and return bool
         """
         if amount > 0 and self._account_balance >= amount:
             self._account_balance -= amount

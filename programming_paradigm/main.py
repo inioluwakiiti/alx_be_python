@@ -1,11 +1,10 @@
-HEAD
 from library import Book, Member, Library
 
 def main():
     library = Library("My Library")
 
     while True:
-        print("\n Library Menu ")
+        print("\n===== Library Menu =====")
         print("1. Add Book")
         print("2. Add Member")
         print("3. Show Books")
@@ -65,18 +64,6 @@ def main():
         else:
             print("Invalid choice, try again.")
 
-
-from fns_and_dsa.arithmetic_operations import perform_operation
-
-def main():
-    print("Arithmetic Operations")
-    num1 = float(input("Enter the first number: "))
-    num2 = float(input("Enter the second number: "))
-    operation = input("Enter the operation (add, subtract, multiply, divide): ").strip().lower()
-
-    result = perform_operation(num1, num2, operation)
-    print(f"Result: {result}")
- (Save shopping list manager work before pull)
 
 if __name__ == "__main__":
     main()
